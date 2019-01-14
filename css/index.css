@@ -272,8 +272,18 @@ footer p{
 
   @media (max-width: 500px) {
 
+    body{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .fsleft h1:nth-child(1) {
-       margin-left: -40px;
+       margin-left: -30px;
+    }
+
+    .firstsection {
+        width: 97%;
+        margin: 0 auto;
     }
 
     .pagetop {
@@ -284,6 +294,9 @@ footer p{
         border-top: 2px solid lightgray; 
     }
    
+    .pagetop img {
+        margin-left: 10px;
+    }
 
     .pagetop nav {
         flex-direction: column;
@@ -299,6 +312,37 @@ footer p{
         padding: 10px 0;
     }
 
+
+    .sectiontwo {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .sectionthree {
+        width: 97%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .sectionthree div{
+        padding: 20px 10px;
+    }
+
+    .sectionthree div:nth-child(1){
+        padding-top: 0; 
+    }
+
+    .middle-img{ 
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    footer {
+        margin-left: 2%; 
+    }
+    
+    
   }
 
 
