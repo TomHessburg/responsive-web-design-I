@@ -268,9 +268,38 @@ footer p{
 
 
 
+    /* media queries for mobile version*/
 
+  @media (max-width: 500px) {
 
+    .fsleft h1:nth-child(1) {
+       margin-left: -40px;
+    }
 
+    .pagetop {
+        align-items: center;    
+    }
+
+    .pagetop nav a:nth-child(1) {
+        border-top: 2px solid lightgray; 
+    }
+   
+
+    .pagetop nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagetop nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid lightgray; 
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+  }
 
 
 
