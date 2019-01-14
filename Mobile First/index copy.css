@@ -67,34 +67,46 @@ h1, h2, h3, h4, h5 {
 here and start to refactor into flexbox */
 
 
+
+
+
+
+
 body {
 	max-width: 800px;
 	margin: 0 auto;
 	margin-top: 30px;
 }
-
-/* navigation bar and top logo*/
 .pagetop {
 	width: 100%;
 	margin-bottom: 80px;
-	display: flex;
+    display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
 }
 
 .pagetop img {
-	margin-left: 50px;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 .pagetop nav{
-    width: 70%;
-    
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pagetop nav a{
     margin: 10px 20px;
 	color: gray;
-	text-decoration: none;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid lightgray; 
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 .pagetop nav a:hover {
@@ -102,473 +114,9 @@ body {
 }
 
 
-/* top section stylings (inovation on demand and the picture, plus the horizontal bottom border*/
-
-.firstsection {
-	display: flex;
-	padding: 10px 0 80px 0;
-	margin-bottom: 20px;
-	border-bottom: 2px solid black;
+.pagetop nav a:nth-child(1) {
+    border-top: 2px solid lightgray; 
 }
-
-.firstsection .fsleft {
-	width: 48%;
-	text-align: center;
-	padding-top: 50px;
-}
-
-#bigtext h1 {
-    font-size: 70px;
-    line-height: 55px;
-}
-
-#startedbox {
-	text-align: center;
-    margin: 0 auto;
-    margin-top: 30px;;
-	display: block;
-	width: 175px;
-	padding: 6px 0;
-	border: 1px solid black;
-	
-}
-
-#startedbox:hover {
-	color: white;
-	background: hsl(240, 100%, 8%);
-}
-	
-/* features/about section + middle img*/
-
-.sectiontwo {
-	display: flex;
-	padding-bottom: 50px;
-}
-
-.sectiontwo div{
-    padding: 10px 0;
-    margin: 10px;
-}
-
-.sectiontwo div h2 {
-	font-size: 22px;
-}
-.sectiontwo div p {
-	font-size: 15px;
-	line-height: 20px;
-}
-
-.middle-img {
-	width: 100%;
-	margin-bottom: 50px;
-}
-
-
-/* section 3 after the middle image*/ 
-
-.sectionthree {
-	display: flex;
-	padding-bottom: 50px;
-	border-bottom: 2px solid black;
-}
-
-.sectionthree div h2 {
-	font-size: 22px;
-}
-.sectionthree div p {
-	font-size: 15px;
-	line-height: 20px;
-}
-.sectionthree div{
-	padding: 10px;
-}
-
-/* footer and copyright stuff */
-
-footer{
-	margin: 40px 0;
-	width: 33%;
-
-}
-
-footer h3 {
-	font-size: 20px;
-}
-
-footer p{
-	font-size: 15px;
-	line-height: 30px;
-}
-
-.crcenter {
-	font-size: 20px;
-	line-height: 30px;
-	margin: 30px;
-	text-align: center;
-}
-
-#address {
-	line-height: 20px;
-}
-
-
-
-
-
-
-
-
-
-/* media query section */
-/* tablet media query*/
-@media (max-width: 800px) {
-
-	body {
-		width: 100%;
-		padding: 20px;
-	}
-
-	.pagetop {
-        flex-direction: column-reverse;
-        margin-bottom: 0;
-    }
-    .pagetop img {
-        margin-bottom: 30px;
-    }
-
-    .pagetop nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        width: 100%;
-    }
-
-    .pagetop nav a {
-        font-size: 20px;
-        margin: 10px;
-    }
-
-    .fsleft {
-        padding-top: 20px;
-    }
-
-	.pagetop nav {
-        margin: 0 auto;
-		margin-bottom: 40px;
-		line-height: 25px;
-	}
-	.firstsection img{
-		display: none; 
-	}
-
-	.firstsection  {
-        justify-content: center;
-        
-    }
-    
-    .sectiontwo div{
-        margin: 15px;
-    }
-
-
-  }
-
-
-
-
-    /* media queries for mobile version*/
-
-  @media (max-width: 500px) {
-
-    body{
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .fsleft h1:nth-child(1) {
-       margin-left: -30px;
-    }
-
-    .firstsection {
-        width: 97%;
-        margin: 0 auto;
-    }
-
-    .pagetop {
-        align-items: center;    
-    }
-
-    .pagetop nav a:nth-child(1) {
-        border-top: 2px solid lightgray; 
-    }
-   
-    .pagetop img {
-        margin-left: 10px;
-    }
-
-    .pagetop nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .pagetop nav a {
-        display: block;
-        width: 100%;
-        text-align: center;
-        border-bottom: 2px solid lightgray; 
-        margin: 0 auto;
-        padding: 10px 0;
-    }
-
-
-    .sectiontwo {
-        flex-direction: column;
-        padding-bottom: 10px;
-    }
-
-    .sectionthree {
-        width: 97%;
-        margin: 0 auto;
-        flex-direction: column;
-    }
-
-    .sectionthree div{
-        padding: 20px 10px;
-    }
-
-    .sectionthree div:nth-child(1){
-        padding-top: 0; 
-    }
-
-    .middle-img{ 
-        margin-bottom: 15px;
-        box-sizing: border-box;
-        padding: 10px;
-    }
-
-    footer {
-        margin-left: 2%; 
-    }
-    
-    
-  }
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*start of page 2*/
-
-/* header image resize and margin reduction for top of page*/
-
-.services-header-img {
-	width: 100%;
-	margin-bottom: 50px;
-}
-
-#services-pagetop{
-	margin-bottom: 30px;
-}
-
-
-/* services section*/
-
-.page-two-services {
-	margin-bottom: 50px;
-	padding-bottom: 50px;
-	border-bottom: 2px solid black;
-}
-
-.page-two-services h2 {
-	font-size: 30px;
-}
-
-.page-two-services p {
-	font-size: 17px;
-}
-
-/* msin services section with the flex stuff!!*/
-
-.main-flex-section {
-	margin-bottom: 50px;
-	padding-bottom: 50px;
-	border-bottom: 2px solid black;
-}
-
-.main-flex-section{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-
-
-
-
-.flex-items {
-	width: 340px;
-	height: 250px;
-	margin: 10px;
-	padding: 7px;
-	background:hsl(228, 71%, 99%);
-	border: 2px solid black;
-}
-
-@media (max-width: 800px){
-    .main-flex-section{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .flex-items {
-        box-shadow: 0 0 15px rgba(0, 0, 0, .25) ;
-        width: 480px;;
-        height: 240px;
-    }
-}
-
-
-@media (max-width: 500px){
-
-    .flex-items {
-        box-shadow: 0 0 15px rgba(0, 0, 0, .25) ;
-        width: 380px;;
-        height: 240px;
-    }
-
-}
-
-
-
-
-.flex-items h2 {
-	font-size: 20px;
-	padding: 5px 0 0 8px;
-}
-.flex-items p {
-	font-size: 15px;
-	line-height: 17px;
-	padding: 5px 0 0 8px;
-}
-
-.learn-more-button {
-	font-size: 15px;
-	background: white;
-	width: 150px;
-	padding: 12px 0;
-	margin: 20px 0 0 20px;
-	text-align: center;
-	border: 1px solid black;
-	border-radius: 10px;
-}
-
-.learn-more-button:hover {
-	background: hsl(240, 100%, 8%);
-	color: white;
-}
-
-
-
-
-/* Final Section Stylings*/
-
-.services-bottom {
-	display: flex;
-	padding-bottom: 50px;
-	align-items: flex-start;
-}
-
-.sb-left {
-	
-	padding: 0 20px 0 0
-}
-
-.sb-left h2 {
-	font-size: 20px;
-}
-
-.sb-left p{
-	font-size: 18px;
-	line-height: 20px;
-	margin: 10px 0;
-}
-
-.sb-left ul li {
-	font-size: 19px;
-	line-height: 22px;
-}
-.sb-left ul li::before {
-	content: "•"; 
-	color: black;
-	margin-right: 10px;
-}
-
-.services-bottom img {
-	width: 334px;
-	height: 280px;
-}
-
-.copyright-tag {
-	text-align: center;
-	margin-bottom: 50px;
-}
-
-@media (max-width: 800px) {
-
-    .services-bottom {
-        flex-direction: column;
-    }
-
-    .sb-left {
-        margin: 10px 0;
-        padding-bottom: 40px;
-    }
-
-
-}
-
-@media (max-width: 500px) {
-
-    .services-bottom {
-        flex-direction: column;
-        align-items: center;
-    }
-    .sb-left {
-        margin: 10px 20px;
-        padding-bottom: 40px;
-    }
-
-    .page-two-services {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .services-header-img {
-        width: 100%;
-    }
-
-}
-
-
-
-
 
 
 
