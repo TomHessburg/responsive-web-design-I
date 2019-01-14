@@ -71,12 +71,13 @@ here and start to refactor into flexbox */
 
 
 
-
 body {
-	max-width: 800px;
+    width: 100%;
 	margin: 0 auto;
 	margin-top: 30px;
 }
+
+/* nav/header styles*/
 .pagetop {
 	width: 100%;
 	margin-bottom: 80px;
@@ -98,6 +99,7 @@ body {
 }
 
 .pagetop nav a{
+    font-size: 18px;
     margin: 10px 20px;
 	color: gray;
     text-decoration: none;
@@ -120,3 +122,136 @@ body {
 
 
 
+/* hero section */
+
+
+.firstsection img {
+    display: none;
+}
+
+.firstsection {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    width: 90%;
+}
+
+.fsleft {
+    width: 95%;
+    margin: 0 auto;
+    
+}
+
+.firstsection h1 {
+    font-size: 80px;
+}
+
+#startedbox {
+	text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;;
+	display: block;
+	width: 175px;
+	padding: 6px 0;
+	border: 4px solid black;
+	
+}
+
+#startedbox:hover {
+	color: white;
+	background: hsl(240, 100%, 8%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section 2*/
+
+.sectiontwo h2 {
+font-size: 20px;
+}
+
+.sectiontwo p {
+font-size: 15px;
+}
+
+.sectiontwo div {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.middle-img {
+    box-sizing: border-box;
+    width: 100%;
+    padding:  30px;
+}
+
+
+
+
+/* section 3*/
+
+.sectionthree h2 {
+    font-size: 20px;
+}¯
+    
+.sectionthree p {
+    font-size: 15px;
+}
+    
+.sectionthree div {
+    
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sectionthree {
+    padding-bottom: 40px;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-bottom: 1px solid black;
+    
+}
+
+
+/* footer */
+footer{
+	margin: 0 auto;
+	width: 90%;
+
+}
+
+footer h3 {
+	font-size: 20px;
+}
+
+footer p{
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.crcenter {
+	font-size: 20px;
+	line-height: 30px;
+	margin: 30px;
+	text-align: center;
+}
+
+#address {
+	line-height: 20px;
+}
